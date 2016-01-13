@@ -1,0 +1,292 @@
+# Copyright 2009-2015 Rocketgenius, Inc.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gravity Forms Highrise Add-On 1.0\n"
+"Report-Msgid-Bugs-To: http://www.gravtiyhelp.com\n"
+"POT-Creation-Date: 2015-07-28 22:28:29+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Rocketgenius <customerservice@rocketgenius.com>\n"
+"Language-Team: Rocketgenius <customerservice@rocketgenius.com>\n"
+"X-Generator: Gravity Forms Build Server\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Project-Id-Version: gravityformshighrise\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Textdomain-Support: yes\n"
+
+#: class-gf-highrise.php:83
+msgid "Account URL"
+msgstr ""
+
+#: class-gf-highrise.php:91
+msgid "API Token"
+msgstr ""
+
+#: class-gf-highrise.php:99
+msgid "Highrise settings have been updated."
+msgstr ""
+
+#: class-gf-highrise.php:118
+msgid ""
+"Highrise is a contact management tool makes it easy to track tasks, "
+"contacts and notes. Use Gravity Forms to collect customer information and "
+"automatically add them to your Highrise account. If you don't have a "
+"Highrise account, you can %1$s sign up for one here.%2$s"
+msgstr ""
+
+#: class-gf-highrise.php:126
+msgid ""
+"Gravity Forms Highrise Add-On requires your account URL and API Token, "
+"which can be found in the API Token tab on the My Info page."
+msgstr ""
+
+#: class-gf-highrise.php:149
+msgid "Feed Name"
+msgstr ""
+
+#: class-gf-highrise.php:153 class-gf-highrise.php:643
+msgid "Name"
+msgstr ""
+
+#: class-gf-highrise.php:153
+msgid "Enter a feed name to uniquely identify this setup."
+msgstr ""
+
+#: class-gf-highrise.php:157 class-gf-highrise.php:644
+msgid "Action"
+msgstr ""
+
+#: class-gf-highrise.php:167
+msgid "Contact Details"
+msgstr ""
+
+#: class-gf-highrise.php:171 class-gf-highrise.php:174
+msgid "Map Fields"
+msgstr ""
+
+#: class-gf-highrise.php:174
+msgid "Select which Gravity Form fields pair with their respective Highrise fields."
+msgstr ""
+
+#: class-gf-highrise.php:184
+msgid "Contact Note"
+msgstr ""
+
+#: class-gf-highrise.php:190 class-gf-highrise.php:192
+msgid "Contact Visibility"
+msgstr ""
+
+#: class-gf-highrise.php:192
+msgid "Choose who has access to this contact."
+msgstr ""
+
+#: class-gf-highrise.php:205 class-gf-highrise.php:208
+msgid "Conditional Logic"
+msgstr ""
+
+#: class-gf-highrise.php:206
+msgid "Enable"
+msgstr ""
+
+#: class-gf-highrise.php:207
+msgid "Export to Highrise if"
+msgstr ""
+
+#: class-gf-highrise.php:208
+msgid ""
+"When conditional logic is enabled, form submissions will only be exported "
+"to Highrise when the condition is met. When disabled, all form submissions "
+"will be posted."
+msgstr ""
+
+#: class-gf-highrise.php:270
+msgid "Everyone in your account"
+msgstr ""
+
+#: class-gf-highrise.php:302
+msgid "Groups"
+msgstr ""
+
+#: class-gf-highrise.php:323
+msgid "First Name"
+msgstr ""
+
+#: class-gf-highrise.php:329
+msgid "Last Name"
+msgstr ""
+
+#: class-gf-highrise.php:335
+msgid "Title"
+msgstr ""
+
+#: class-gf-highrise.php:339
+msgid "Company"
+msgstr ""
+
+#: class-gf-highrise.php:355
+msgid "Choose a Field"
+msgstr ""
+
+#: class-gf-highrise.php:359
+msgid "Background"
+msgstr ""
+
+#: class-gf-highrise.php:363
+msgid "LinkedIn URL"
+msgstr ""
+
+#: class-gf-highrise.php:367
+msgid "Twitter Username"
+msgstr ""
+
+#: class-gf-highrise.php:370
+msgid "Email Address"
+msgstr ""
+
+#: class-gf-highrise.php:373 class-gf-highrise.php:390
+#: class-gf-highrise.php:423 class-gf-highrise.php:440
+msgid "Work"
+msgstr ""
+
+#: class-gf-highrise.php:377 class-gf-highrise.php:406
+#: class-gf-highrise.php:444
+msgid "Home"
+msgstr ""
+
+#: class-gf-highrise.php:381 class-gf-highrise.php:414
+#: class-gf-highrise.php:431 class-gf-highrise.php:448
+#: class-gf-highrise.php:497
+msgid "Other"
+msgstr ""
+
+#: class-gf-highrise.php:387
+msgid "Phone Number"
+msgstr ""
+
+#: class-gf-highrise.php:394
+msgid "Mobile"
+msgstr ""
+
+#: class-gf-highrise.php:398
+msgid "Fax"
+msgstr ""
+
+#: class-gf-highrise.php:402
+msgid "Pager"
+msgstr ""
+
+#: class-gf-highrise.php:410 class-gf-highrise.php:477
+msgid "Skype"
+msgstr ""
+
+#: class-gf-highrise.php:420
+msgid "Website"
+msgstr ""
+
+#: class-gf-highrise.php:427
+msgid "Personal"
+msgstr ""
+
+#: class-gf-highrise.php:437
+msgid "Address"
+msgstr ""
+
+#: class-gf-highrise.php:454
+msgid "Instant Messenger"
+msgstr ""
+
+#: class-gf-highrise.php:457
+msgid "AIM"
+msgstr ""
+
+#: class-gf-highrise.php:461
+msgid "MSN"
+msgstr ""
+
+#: class-gf-highrise.php:465
+msgid "ICQ"
+msgstr ""
+
+#: class-gf-highrise.php:469
+msgid "Jabber"
+msgstr ""
+
+#: class-gf-highrise.php:473
+msgid "Yahoo"
+msgstr ""
+
+#: class-gf-highrise.php:481
+msgid "QQ"
+msgstr ""
+
+#: class-gf-highrise.php:485
+msgid "Sametime"
+msgstr ""
+
+#: class-gf-highrise.php:489
+msgid "Gadu-Gadu"
+msgstr ""
+
+#: class-gf-highrise.php:493
+msgid "Google Talk"
+msgstr ""
+
+#: class-gf-highrise.php:503
+msgid "Custom Fields"
+msgstr ""
+
+#: class-gf-highrise.php:625
+msgid "Add New Custom Field"
+msgstr ""
+
+#: class-gf-highrise.php:661
+msgid "Create a New Contact"
+msgstr ""
+
+#: class-gf-highrise.php:663
+msgid "Create a New Case, Assign New Contact to Case"
+msgstr ""
+
+#: class-gf-highrise.php:697
+msgid "Feed was not processed because API was not initialized."
+msgstr ""
+
+#: class-gf-highrise.php:718
+msgid "Contact could not be created as first name was not provided."
+msgstr ""
+
+#: class-gf-highrise.php:914
+msgid "Contact could not be created. %s"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Gravity Forms Highrise Add-On"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.gravityforms.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Integrates Gravity Forms with Highrise allowing form submissions to be "
+"automatically sent to your Highrise account."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "rocketgenius"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.rocketgenius.com"
+msgstr ""
