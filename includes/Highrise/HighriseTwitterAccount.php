@@ -20,8 +20,8 @@
 			
 			$xml->addChild( 'id', $this->get_id() );
 			$xml->id->addAttribute( 'type', 'integer' );
-			$xml->addChild( 'username', $this->getUsername() );
-			$xml->addChild( 'location', $this->getLocation() );
+			$xml->addChild( 'username', $this->get_username() );
+			$xml->addChild( 'location', $this->get_location() );
 			
 			return $xml;
 			
@@ -49,7 +49,7 @@
 		
 		public function get_url() {
 			
-			return 'http://twitter.com/' . $this->getUsername();
+			return 'http://twitter.com/' . $this->get_username();
 			
 		}
 		

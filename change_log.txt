@@ -1,0 +1,13 @@
+-----------------------------------------------------------
+1.1.1
+    - Fixed PHP notice.
+-----------------------------------------------------------
+1.1
+	- Added exception handling to API calls.
+	- Added feed duplication support.
+	- Added support for delaying feed processing until payment by PayPal Standard is successfully completed.
+	- Fixed thrown exception when using a mapped phone number field.
+  
+-----------------------------------------------------------
+1.0
+	- It's all new!
