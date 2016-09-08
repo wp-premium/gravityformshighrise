@@ -353,8 +353,9 @@
 
 		public function add_custom_field( $field, $value = false ) {
 			
-			if ( ! $field instanceof HighriseCustomField )
+			if ( ! $field instanceof HighriseCustomField ) {
 				throw new \Exception( '$field must be an instant of HighriseCustomField' );
+			}
 			
 			if ( ! isset( $this->custom_fields[ $field->get_subject_field_id() ] ) ) {
 				
@@ -384,10 +385,7 @@
 		
 		public function add_instant_messenger( $protocol, $address, $location = 'Work' ) {
 			
-			$instant_messenger = new HighriseInstantMessenger();
-			$instant_messenger->set_protocol( $protocol );
-			$instant_messenger->set_address( $address );
-			$instant_messenger->set_location( $location );
+			$instant_messenger = new HighriseInstantMessenger( null, $protocol, $address, $location );
 				
 			$this->instant_messengers[] = $instant_messenger;
 			
@@ -405,9 +403,7 @@
 
 		public function add_phone_number( $number, $location = 'Work' ) {
 			
-			$phone_number = new HighrisePhoneNumber();
-			$phone_number->set_number( $number );
-			$phone_number->set_location( $location );
+			$phone_number = new HighrisePhoneNumber( null, $number, $location );
 			
 			$this->phone_numbers[] = $phone_number;
 			
@@ -432,9 +428,7 @@
 
 		public function add_twitter_account( $username, $location = 'Business' ) {
 			
-			$twitter_account = new HighriseTwitterAccount();
-			$item->set_username( $username );
-			$item->set_location( $location );
+			$twitter_account = new HighriseTwitterAccount( null, $username, $location );
 			
 			$this->twitter_accounts[] = $twitter_account;
 			
@@ -442,9 +436,7 @@
 
 		public function add_web_address( $url, $location = 'Work' ) {
 			
-			$web_address = new HighriseWebAddress();
-			$web_address->set_url( $url );
-			$web_address->set_location( $location );
+			$web_address = new HighriseWebAddress( null, $url, $location);
 			
 			$this->web_addresses[] = $web_address;
 			
