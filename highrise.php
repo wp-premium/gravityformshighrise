@@ -1,10 +1,9 @@
 <?php
-	
-/*
+/**
 Plugin Name: Gravity Forms Highrise Add-On
 Plugin URI: http://www.gravityforms.com
 Description: Integrates Gravity Forms with Highrise allowing form submissions to be automatically sent to your Highrise account.
-Version: 1.0
+Version: 1.1.1
 Author: rocketgenius
 Author URI: http://www.rocketgenius.com
 Text Domain: gravityformshighrise
@@ -27,21 +26,42 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
-*/
+ */
 
-define( 'GF_HIGHRISE_VERSION', '1.0' );
+define( 'GF_HIGHRISE_VERSION', '1.1.1' );
 
+// If Gravity Forms is loaded, bootstrap the Highrise Add-On.
 add_action( 'gform_loaded', array( 'GF_Highrise_Bootstrap', 'load' ), 5 );
 
+/**
+ * Class GF_Highrise_Bootstrap
+ *
+ * Handles the loading of the Highrise Add-On and registers with the Add-On Framework.
+ */
 class GF_Highrise_Bootstrap {
 
-	public static function load(){
+	/**
+	 * If the Feed Add-On Framework exists, Highrise Add-On is loaded.
+	 *
+	 * @access public
+	 * @static
+	 */
+	public static function load() {
+
 		require_once( 'class-gf-highrise.php' );
+
 		GFAddOn::register( 'GFHighrise' );
+
 	}
 
 }
 
+/**
+ * Returns an instance of the GFHighrise class
+ *
+ * @see    GFHighrise::get_instance()
+ * @return object GFHighrise
+ */
 function gf_highrise() {
 	return GFHighrise::get_instance();
 }
