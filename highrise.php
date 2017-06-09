@@ -2,8 +2,8 @@
 /**
 Plugin Name: Gravity Forms Highrise Add-On
 Plugin URI: http://www.gravityforms.com
-Description: Integrates Gravity Forms with Highrise allowing form submissions to be automatically sent to your Highrise account.
-Version: 1.1.1
+Description: Integrates Gravity Forms with Highrise, allowing form submissions to be automatically sent to your Highrise account.
+Version: 1.2
 Author: rocketgenius
 Author URI: http://www.rocketgenius.com
 Text Domain: gravityformshighrise
@@ -28,7 +28,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-define( 'GF_HIGHRISE_VERSION', '1.1.1' );
+define( 'GF_HIGHRISE_VERSION', '1.2' );
 
 // If Gravity Forms is loaded, bootstrap the Highrise Add-On.
 add_action( 'gform_loaded', array( 'GF_Highrise_Bootstrap', 'load' ), 5 );
