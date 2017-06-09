@@ -19,8 +19,27 @@
 			
 			curl_setopt( $this->curl, CURLOPT_RETURNTRANSFER, true );
 			curl_setopt( $this->curl, CURLOPT_HTTPHEADER,     array( 'Accept: application/xml', 'Content-Type: application/xml' ) );
-			curl_setopt( $this->curl, CURLOPT_SSL_VERIFYPEER, 0 );
-			curl_setopt( $this->curl, CURLOPT_SSL_VERIFYHOST, 0 );
+
+
+			/***
+			 * Determines if the cURL CURLOPT_SSL_VERIFYPEER option is enabled.
+			 *
+			 * @since 1.2
+			 *
+			 * @param bool is_enabled True to enable peer verification. False to bypass peer verification. Defaults to true.
+			 */
+			$verify_peer = apply_filters( 'gform_highrise_verifypeer', true );
+			curl_setopt( $this->curl, CURLOPT_SSL_VERIFYPEER, $verify_peer );
+
+			/***
+			 * Determines if the cURL CURLOPT_SSL_VERIFYHOST option is enabled.
+			 *
+			 * @since 1.2
+			 *
+			 * @param bool is_enabled True to enable host verification. False to bypass host verification. Defaults to true.
+			 */
+			$verify_host = apply_filters( 'gform_highrise_verifyhost', true );
+			curl_setopt( $this->curl, CURLOPT_SSL_VERIFYHOST, $verify_host );
 			
 			/* Build request URL */
 			$request_url = 'https://' . $this->account . '.highrisehq.com/' . $action . '.xml';
