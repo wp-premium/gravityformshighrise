@@ -276,7 +276,7 @@ class GFHighrise extends GFFeedAddOn {
 		$description  = '<p>';
 		$description .= sprintf(
 			esc_html__( 'Highrise is a contact management tool that makes it easy to track tasks, contacts and notes. Use Gravity Forms to collect customer information and automatically add it to your Highrise account. If you don\'t have a Highrise account, you can %1$ssign up for one here.%2$s', 'gravityformshighrise' ),
-			'<a href="http://www.highrise.com/" target="_blank">', '</a>'
+			'<a href="https://highrisehq.com/" target="_blank">', '</a>'
 		);
 		$description .= '</p>';
 

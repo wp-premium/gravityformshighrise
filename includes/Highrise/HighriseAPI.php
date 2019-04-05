@@ -18,7 +18,7 @@
 		public function make_request( $action, $options = array(), $method = 'GET' ) {
 			
 			curl_setopt( $this->curl, CURLOPT_RETURNTRANSFER, true );
-			curl_setopt( $this->curl, CURLOPT_HTTPHEADER,     array( 'Accept: application/xml', 'Content-Type: application/xml' ) );
+			curl_setopt( $this->curl, CURLOPT_HTTPHEADER,     array( 'Accept: application/xml', 'Content-Type: application/xml', 'User-Agent: Gravity Forms (http://gravityforms.com/add-ons/highrise)' ) );
 
 
 			/***
@@ -39,7 +39,7 @@
 			 * @param bool is_enabled True to enable host verification. False to bypass host verification. Defaults to true.
 			 */
 			$verify_host = apply_filters( 'gform_highrise_verifyhost', true );
-			curl_setopt( $this->curl, CURLOPT_SSL_VERIFYHOST, $verify_host );
+			curl_setopt( $this->curl, CURLOPT_SSL_VERIFYHOST, $verify_host ? 2 : 0 );
 			
 			/* Build request URL */
 			$request_url = 'https://' . $this->account . '.highrisehq.com/' . $action . '.xml';
