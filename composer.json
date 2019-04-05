@@ -1,0 +1,9 @@
+{
+    "name": "wp-premium/gravityformshighrise",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "classmap": [
+            "."
+        ]
+    }
+}
